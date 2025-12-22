@@ -10,7 +10,7 @@
   <img src="./assets/bupo.png" alt="BuPO" width="90%">
 </p>
 <p align="center">
-  <sub>BuPO</sub>
+  <sub>Detailed Implementation of the BuPO Algorithm</sub>
 </p>
 
 
