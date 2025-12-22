@@ -22,6 +22,11 @@
 - **Bottom-up Policy Optimization (BuPO)**: A novel two-phase RL algorithm that first optimizes an internal, lower-layer policy to reconstruct foundational reasoning, then fine-tunes the full model.
 - **Enhanced Reasoning Performance**: BuPO significantly outperforms standard RL on complex reasoning benchmarks.
 
+<p align="center">
+  <img src="./assets/framework.png" alt="BuPO" width="90%">
+</p>
+
+
 ## 🚀 Code Release
 The code and models for this project will be made publicly available within *one week*. Please stay tuned!
 
