@@ -1,4 +1,6 @@
 <h1 align="center">
+<img src="assets/bupo_logo.png" width="230" alt="bupo-logo" />
+    <br>
   <em>Bottom-up Policy Optimization:</em><br>
   Your Language Model Policy Secretly Contains Internal Policies
 </h1>
