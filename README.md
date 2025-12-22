@@ -28,7 +28,7 @@
 
 
 ## 🚀 Code Release
-The code and models for this project will be made publicly available within *one week*. Please stay tuned!
+The code and models for this project will be made publicly available within *two weeks* (too busy, sorry :).  Please stay tuned!
 
 ## 🙇‍♂️ Acknowledgement
 We thank the <a href="https://github.com/volcengine/verl">verl</a> for their valuable contributions to the open-source community.
