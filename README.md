@@ -6,6 +6,14 @@
 ## 👁 Overview
 ***Bottom-up Policy Optimization*** provides a novel framework to decompose LLM policies into internal layer and modular policies, reveals distinct reasoning patterns across different model architectures, and introduces a bottom-up optimization algorithm that leverages these insights to enhance complex reasoning.
 
+<p align="center">
+  <img src="./assets/bupo.png" alt="BuPO" width="90%">
+</p>
+<p align="center">
+  <sub>BuPO</sub>
+</p>
+
+
 ## 🤯 Key Findings:
 - **Internal Policies**: Decomposes the unified LLM policy into samplable distributions from individual layers and modules (self-attention & FFN).
 - **Progressive Reasoning Pattern**: Discovered a human-like "Exploration-Integration-Convergence" (EIC) pattern in Qwen models, contrasting with the abrupt convergence in Llama models.
