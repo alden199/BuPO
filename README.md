@@ -6,6 +6,14 @@
   Your Language Model Policy Secretly Contains Internal Policies
 </h2>
 
+<div>
+
+[![arXiv](https://img.shields.io/badge/arXiv-2512.19673-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.19673])
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+
+</div>
+
 ## 👁 Overview
 ***Bottom-up Policy Optimization*** provides a novel framework to decompose LLM policies into internal layer and modular policies, reveals distinct reasoning patterns across different model architectures, and introduces a bottom-up optimization algorithm that leverages these insights to enhance complex reasoning.
 
