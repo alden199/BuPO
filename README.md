@@ -29,11 +29,41 @@
 
 
 
-## 🚀 Code Release
-The code and models for this project will be made publicly available within *two weeks* (too busy, sorry :).  Please stay tuned!
+## 🚀 Quick Start
+### Installation 
+
+```
+conda create -y -n bupo python=3.10.17 && conda activate bupo
+pip install -r requirements
+python -m pip install flash-attn --no-build-isolation
+pip install -e .
+```
+### Training
+BuPO: specify `k` (internal layer policy index), `iterative_steps` (steps of internal policy optimization) in `run_code/BuPO_qwen3.sh` and `run_code/BuPO_llama.sh` to train the model with BuPO.
+```
+cd BuPO
+conda activate bupo
+bash run_code/BuPO_qwen3.sh
+```
+GRPO:
+```
+bash run_code/GRPO_qwen3.sh
+```
+
+### Implementation Details 🤔
+Our mainly design lays in:
+* `verl/models/custom_model`: we modify the source file of model forward pass in `transformers ` to get internal hidden states and internal policy effectively/
+* `verl/workers/actor/dp_actor.py/_forward_micro_batch_layer_k()`: here to switch to compute the importance ratio of internal layer policy and update it.
+
 
 ## 🙇‍♂️ Acknowledgement
 We thank the <a href="https://github.com/volcengine/verl">verl</a> for their valuable contributions to the open-source community.
+
+## 📬 Contact
+For questions, discussion, or collaboration opportunities, feel free to contact us!
+
+* Yuqiao Tan: tanyuqiao2025@ia.ac.cn
+* Minzheng Wang: wangminzheng2023@ia.ac.cn
 
 ## ✍️ Citation
 If you find our work helpful, please cite as:
