@@ -2,9 +2,7 @@
 <img src="assets/bupo_logo.png" width="230" alt="bupo-logo" />
     <br>
   <em>Bottom-up Policy Optimization:</em><br>
-<h2 align="center">
   Your Language Model Policy Secretly Contains Internal Policies
-</h2>
 
 <div>
 
