@@ -34,7 +34,7 @@ If you find our work helpful, please cite as:
 
 ```
 @article{tan2025bupo,
-      title={Adaptive Thinking via Mode Policy Optimization for Social Language Agents}, 
+      title={Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies}, 
       author={Yuqiao Tan and Minzheng Wang and Shizhu He and Huanxuan Liao and Chengfeng Zhao and Qiunan Lu and Tian Liang and Jun Zhao and Kang Liu},
       year={2025},
       journal={arXiv preprint arXiv:2512.19673},
