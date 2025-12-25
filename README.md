@@ -13,6 +13,7 @@
 </div>
 
 ## 📰 News
+* 2025-12-24: 🎉 Ranked **#2** of the day on <a href="https://huggingface.co/papers/date/2025-12-24">Huggingface Daily Papers</a>.
 * 2025-12-23: 🔥 We release the BuPO <a href="https://github.com/Trae1ounG/BuPO">code</a> and the <a href="https://arxiv.org/abs/2512.19673">paper</a>.
 
 
