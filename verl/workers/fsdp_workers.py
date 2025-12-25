@@ -79,7 +79,7 @@ from verl.workers.rollout.rollout_worker import RolloutWorker
 from verl.workers.sharding_manager.fsdp_ulysses import FSDPUlyssesShardingManager
 
 import sys
-sys.path.insert(0, "/home/tanyuqiao/Entropy_Grad/verl/models/custom_model")
+sys.path.insert(0, "your/path/to/custom_model")
 
 
 

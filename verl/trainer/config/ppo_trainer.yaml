@@ -39,8 +39,6 @@ actor_rollout_ref:
 
   # Timeout for operations executed against the process group
   nccl_timeout: 600
-  actor:
-    version: 01
   # common configs for the model
   model:
 
