@@ -81,19 +81,10 @@ class DataParallelPPOActor(BasePPOActor):
         else:
             entropy_from_logits = verl_F.entropy_from_logits
             
-        if self.config.self_certainty_from_logits_with_chunking:
-            self_certainty_from_logits = verl_F.self_certainty_from_logits_with_chunking
-        else:
-            self_certainty_from_logits = verl_F.self_certainty_from_logits
         self.compute_entropy_from_logits = (
             torch.compile(entropy_from_logits, dynamic=True)
             if self.config.get("use_torch_compile", True)  #  use torch compile by default
             else entropy_from_logits
-        )
-        self.compute_self_certainty_from_logits = (
-            torch.compile(self_certainty_from_logits, dynamic=True)
-            if self.config.get("use_torch_compile", True)  # use torch compile by default
-            else self_certainty_from_logits
         )
         self.device_name = get_device_name()
 
@@ -823,7 +814,7 @@ class DataParallelPPOActor(BasePPOActor):
                         )
                 # Original Process
                 else:
-                    entropy, log_probs, self_certainty = self._forward_micro_batch(
+                    entropy, log_probs = self._forward_micro_batch(
                         model_inputs, temperature=temperature, calculate_entropy=calculate_entropy
                     )
             log_probs_lst.append(log_probs)
